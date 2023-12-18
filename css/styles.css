@@ -2,6 +2,8 @@
 
 .main-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: cu valorile 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .div-class {
   display: flex;
@@ -88,12 +90,17 @@ body {
 /* Section-1 ( Hero section ) */
 
 .hero-section {
-  /* width: 1440px;
-  height: 600px;
-  background-color: #2e2f42; */
   padding: 188px 0;
-  background: #2e2f42b2;
-  background-image: url(../images/people-office.jpg);
+}
+.styling {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0 7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 .hero-title {
@@ -131,12 +138,10 @@ body {
 
 /* Section-2 ( How we do it ) */
 
-.custo-divv {
-  display: a;
-}
 .how-to-do-it {
   padding: 120px 0;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -157,9 +162,19 @@ body {
   width: 100%;
   min-width: 264px;
 }
-.list-svg {
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
+/* .list-svg {
+  width: 64px;
+  height: 64px;
+} */
 .joker {
   font-weight: 500;
   font-size: 20px;
@@ -231,13 +246,27 @@ body {
   display: flex;
   gap: 24px;
   list-style: none;
-  align-items: center;
-  padding: 0;
+  justify-content: center;
 }
 .list-team-svg {
-  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
 }
-
+.link-media {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.link-media:hover,
+.link-media:focus {
+  background-color: #404bbf;
+}
+.svg-media {
+  fill: #f4f4fd;
+}
 /* Section-5 */
 
 .list-of-media-channels {
