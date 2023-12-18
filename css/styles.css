@@ -42,6 +42,7 @@
 }
 .list {
   list-style: none;
+  padding: 0;
 }
 .nav-bar {
   list-style: none;
@@ -87,8 +88,13 @@ body {
 /* Section-1 ( Hero section ) */
 
 .hero-section {
-  background-color: #2e2f42;
+  /* width: 1440px;
+  height: 600px;
+  background-color: #2e2f42; */
   padding: 188px 0;
+  background: #2e2f42b2;
+  background-image: url(../images/people-office.jpg);
+  background-size: cover;
 }
 .hero-title {
   margin: 0 auto;
@@ -125,6 +131,9 @@ body {
 
 /* Section-2 ( How we do it ) */
 
+.custo-divv {
+  display: a;
+}
 .how-to-do-it {
   padding: 120px 0;
 }
@@ -147,6 +156,9 @@ body {
 .the-hop {
   width: 100%;
   min-width: 264px;
+}
+.list-svg {
+  background-color: #f4f4fd;
 }
 .joker {
   font-weight: 500;
@@ -209,12 +221,39 @@ body {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-
 .about-employ {
   padding: 32px 0;
 }
-
 .plus {
+  text-align: center;
+}
+.media-employ {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+}
+.list-team-svg {
+  background-color: #4d5ae5;
+}
+
+/* Section-5 */
+
+.list-of-media-channels {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding-left: 0;
+}
+.customers {
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
   text-align: center;
 }
 
@@ -222,7 +261,10 @@ body {
 
 .big-toe {
   background-color: #2e2f42;
+  margin: 0 auto;
+
   padding: 100px 0;
+  display: flex;
 }
 .span-logo {
   color: #f4f4f4fd;
