@@ -64,7 +64,7 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  gap: 40;
+  gap: 40px;
 }
 .list-class {
   display: flex;
@@ -319,6 +319,7 @@ body {
 }
 .footer-div {
   align-items: baseline;
+  display: flex;
 }
 .second-footer-class {
   margin-right: 120px;
@@ -337,8 +338,15 @@ body {
   letter-spacing: 0.02em;
   color: #ffffffff;
   margin-bottom: 16px;
-  letter-spacing: 0.02em;
   max-width: 264px;
+}
+.second-p-footer {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffffff;
+  margin-bottom: 16px;
 }
 .list-of-media-footer {
   display: flex;
