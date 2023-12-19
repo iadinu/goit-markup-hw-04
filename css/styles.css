@@ -270,6 +270,10 @@ body {
 .svg-media {
   fill: #f4f4fd;
 }
+.second-footer-class {
+  width: 264px;
+  height: 72px;
+}
 
 /* Section-5 */
 
@@ -358,6 +362,7 @@ body {
   display: flex;
   gap: 16px;
   list-style: none;
+  padding-left: 0;
 }
 .list-of-four {
   width: 40px;
