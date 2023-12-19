@@ -91,6 +91,7 @@ body {
 
 .hero-section {
   padding: 188px 0;
+  margin: auto;
 }
 .styling {
   background-image: linear-gradient(
@@ -247,6 +248,7 @@ body {
   gap: 24px;
   list-style: none;
   justify-content: center;
+  padding-left: 0;
 }
 .list-team-svg {
   width: 40px;
@@ -287,6 +289,7 @@ body {
   gap: 24px;
   list-style: none;
   height: 88px;
+  padding-left: 0;
 }
 .list-of-six {
   width: calc((100% - 120px) / 6);
@@ -316,10 +319,13 @@ body {
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
+  max-width: 1440px;
 }
 .footer-div {
   align-items: baseline;
   display: flex;
+  max-width: 1440px;
+  padding-left: 156px;
 }
 .second-footer-class {
   margin-right: 120px;
@@ -373,6 +379,7 @@ body {
 .svg-of-the-four {
   fill: #f4f4f4fd;
 }
+
 /* Portfolio */
 
 img {
