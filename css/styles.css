@@ -286,10 +286,10 @@ body {
   display: flex;
   gap: 24px;
   list-style: none;
+  height: 88px;
 }
 .list-of-six {
   width: calc((100% - 120px) / 6);
-  height: 88px;
 }
 .the-six-elm {
   width: 100%;
