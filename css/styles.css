@@ -14,6 +14,8 @@ body {
 /*Header classes*/
 .main-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .div-class {
   display: flex;
@@ -34,9 +36,10 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .link {
   text-decoration: none;
@@ -51,13 +54,15 @@ body {
 }
 .list {
   list-style-type: none;
+  padding: 0;
 }
 .tab-bar {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 16px;
   font-weight: 500;
-  line-height: 150%; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 .tab-bar:hover,
 .tab-bar:focus {
@@ -81,7 +86,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  letter-spacing: 0.32px;
   text-decoration: none;
 }
 .address-elm:hover,
@@ -90,15 +94,24 @@ body {
 }
 /*Section 1*/
 .hero-section {
-  color: var(-white-color);
-  background-color: var(--navy-color);
   padding: 188px 0;
+  margin: auto;
+}
+.styling {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   color: var(--white-color);
   margin: 0 auto;
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
@@ -123,7 +136,7 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--ocean-color);
+  color: var(--ocean-color);
 }
 /* Section 2 */
 .how-to-do-it {
@@ -149,6 +162,15 @@ body {
 .best-list-elm {
   width: 100%;
   min-width: 264px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--cloud-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 .joker {
   color: var(--navy-color);
@@ -212,20 +234,141 @@ body {
 .plus {
   text-align: center;
 }
-
+.media-employee {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0;
+}
+.list-team-svg {
+  width: 40px;
+  height: 40px;
+}
+.link-media {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-media:hover,
+.link-media:focus {
+  background-color: #404bbf;
+}
+.svg-media {
+  fill: #f4f4fd;
+}
+/* Section 5 */
+.customers {
+  padding: 120px 0;
+}
+.customers-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+  margin-bottom: 72px;
+  text-align: center;
+}
+.list-of-media-channels {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  height: 88px;
+  padding-left: 0;
+}
+.list-of-six {
+  width: calc((100% - 120px) / 6);
+}
+.the-six-elm {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+.the-six-elm:hover,
+.the-six-elm:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+.svg-of-the-six {
+  fill: currentColor;
+}
 /* Footer */
 .big-toe {
   background-color: var(--navy-color);
+  margin: 0 auto;
   padding: 100px 0;
+  display: flex;
+  max-width: 1440px;
+}
+.footer-div {
+  align-items: baseline;
+  display: flex;
+  max-width: 1440px;
+  padding-left: 156px;
+}
+.second-footer-class {
+  margin-right: 120px;
+  width: 264px;
+  height: 72px;
+}
+.loggos-f {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .span-logo {
   color: var(--cloud-color);
 }
 .p-footer {
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
-  color: #f4f4fd;
   letter-spacing: 0.02em;
+  color: #f4f4fd;
+  margin-bottom: 16px;
   max-width: 264px;
+}
+.second-p-footer {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffffff;
+  margin-bottom: 16px;
+}
+.list-of-media-footer {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding-left: 0;
+}
+.list-of-four {
+  width: 40px;
+  height: 40px;
+}
+.the-four-elm {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.the-four-elm:hover,
+.the-four-elm:focus {
+  background-color: #31d0aa;
+}
+.svg-of-the-four {
+  fill: #f4f4f4fd;
 }
 /* Portfolio */
 .porto-section {
